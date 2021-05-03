@@ -1,0 +1,197 @@
+@import "../../common.scss";
+.App{
+    margin-top: 64px;
+    background-color:$bg-darkgray;
+    h3{
+        color:$color-light-blue;  
+    }
+    .nav{
+        width:80%;
+        margin:auto;
+        text-align: center!important;
+        padding:20px;
+        .navwrapper{
+        a{
+             color:$color-white;
+             padding:6px 10px;
+             margin-top:10px;
+             font-size: 0.775rem;
+             text-decoration: none;
+             border-right:0.5px solid gray;
+         }
+         a:last-child{
+             border-right:none
+         }
+        
+        }
+     }
+     .container{
+         background-image: url(../../containerimg.png);
+         position: relative;
+         height: 500px; /* You must set a specified height */
+         background-position: center; /* Center the image */
+         background-repeat: no-repeat; /* Do not repeat the image */
+         background-size: cover;
+         .containerstyle{
+             position: absolute;
+             z-index: 500;
+            background: transparent radial-gradient(closest-side at 50% 50%, #383838 0%, #1f1f1f 34%, #000 100%) 0% 0% no-repeat padding-box;;
+         }
+         
+         .containercontent{
+             text-align: center;
+             position: absolute;
+             z-index: 1;
+             left:25%;
+             top:15%;
+             .containerheading{
+                 color:$color-blue;
+             }
+             .info{
+                 color:$color-white;
+             }
+             .links{
+                 color:$color-light-blue;
+                 padding:5px
+             }
+         }
+        
+     }
+     .wrapper{
+         width:100%;
+         background-color: black;
+         .wrappercontent {
+            width: 70%;
+            margin: 0 auto;
+            .containerheading{
+                color:$color-blue;
+                padding-top: 20px;;
+                margin-top:0;
+            }
+            .contentfirst{
+                display: flex;
+                margin-top:10px;
+            .image {
+                width: 50%;
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+            .info{
+                padding-left:10px;
+                padding-top:50px;
+                p:first-child,a{
+                    color:$color-light-blue;
+                    font-size: 12px;
+                }
+                p{
+                    color:$color-white;
+                    font-size: 12px;
+                }
+            }
+        }
+        }
+        .jioapps{
+            width:50%;
+            margin:0 auto;
+            text-align: center;
+            p{
+                color:$color-white; 
+            }
+            img{
+                max-width: 100%;
+                    height: auto;
+            }
+        }
+        .processcontainer{
+            width:50%;
+            margin: 0 auto;
+            padding:70px;
+            text-align: center;
+            p{color:$color-white;margin: 0; }h3{
+                margin: 0;
+            }
+            .processes{
+                width:100%;
+                margin-top:20px;
+                display: flex;
+               
+                .item{
+                    width:25%;
+                    position: relative;
+                   button{
+                        background-color:$color-blue;
+                        border-radius: 50%;
+                        height:40px;
+                        border: none;
+                   }
+                   p{font-size: 12px;}
+                   a{
+                       color: $color-light-blue;font-size: 12px;
+                   }
+                   span{
+                       position: absolute;
+                       width: 20px;
+                       background-color: $color-light-blue;
+                       left:75px;
+                       top:-5px;
+                       border-radius: 50%;;
+                   }
+                }
+            }
+        }
+     }
+     .jioprogram{
+         padding:30px;
+         .jioprogramcontainer{
+             width:50%;
+             margin: 0 auto;
+             text-align: center;
+             img{
+                max-width:50%;
+                height: 40px;
+             }h3{
+                 margin: 0;
+             }
+             p{
+                color:$color-white; 
+                margin: 0;
+            }
+            a{
+                color:$color-light-blue;  
+                padding:20px;
+            }
+            
+         }
+     }
+     .develop{
+         width:100%;
+         background-color: $color-white;
+         .developcontainer{
+             width:70%;
+             margin:0 auto;
+             display: flex;
+             padding:40px;
+             .developleft{
+                 width:70%;
+                 border-right: 0.5px solid lightgray;
+                 p{
+                     margin:0;
+                 }
+                 a{
+                    color:$color-light-blue;  
+                 }
+             }
+             .developright{
+                 width:30%;
+                 padding:20px; p{
+                     text-align: center;margin-top:40px
+                 }
+                 a{
+                    color:$color-light-blue;  margin-top: 50px;
+                 }
+             }
+         }
+     }
+}

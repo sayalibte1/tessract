@@ -1,0 +1,28 @@
+@import "../../common.scss";
+.wrapper{
+    width:100%;
+    background-color:$bg-black;
+    .footercontainer{
+        width:70%;
+        margin:0 auto;
+        display: flex;
+       p,a{
+           color:$color-white;
+           font-size: 14px;
+           margin:12px 0 0 0;
+       }
+       .footersecjio,.footersecdev,.footerseccontact{
+           width:33.33%;
+           padding-top:50px;
+           div{
+               margin-bottom: 40px;
+           }
+       }
+       .footersecjio p:first-child, .footersecdev p:first-child,.footerseccontact p:first-child{
+           font-size: 16px;
+           font-weight: bold;
+       }
+      
+
+    }
+}
